@@ -185,115 +185,102 @@
 
                         <!-- Curriculum Accordion Start -->
                         <div id="Curriculum-accordian">
-                            <!-- Core Concepts -->
+                            <!-- Introduction -->
     <div class="panel panel-default clp-section_accord_bx">
         <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-target="#coreConcepts">
             <h3 class="panel-title d-flex justify-content-between align-items-center">
-                <span> Core Concepts</span>
+                <span> Introduction </span>
                 <button class="btn btn-primary toggle-btn">+</button>
             </h3>
         </div>
         <div id="coreConcepts" class="panel-collapse collapse">
             <div class="panel-body">
                 <ul>
-                    <li>What is Docker and why it's essential for DevOps</li>
+                    <li>What is Docker and why it matters in DevOps/Cloud</li>
                     <li>Containers vs Virtual Machines</li>
-                    <li>Docker Engine, Client/Daemon Architecture</li>
-                    <li>Docker Hub and other Container Registries</li>
-                    <li>Image lifecycle: pull, run, tag, push</li>
-                    <li>Container lifecycle: create, start, stop, remove</li>
+                    <li>Docker architecture overview</li>
+                    <li>Real-world use cases</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- Docker CLI -->
+    <!-- Installing Docker & Running Sample Containers -->
     <div class="panel panel-default clp-section_accord_bx">
         <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-target="#cli">
             <h3 class="panel-title d-flex justify-content-between align-items-center">
-                <span> Docker CLI & Commands</span>
+                <span> Installing Docker & Running Sample Containers </span>
                 <button class="btn btn-primary toggle-btn">+</button>
             </h3>
         </div>
         <div id="cli" class="panel-collapse collapse">
             <div class="panel-body">
                 <ul>
-                    <li>Running containers in interactive and detached modes</li>
-                    <li>docker run, ps, exec, logs, inspect</li>
-                    <li>Managing container logs, networks, ports</li>
-                    <li>Viewing and managing images (docker images, rmi)</li>
-                    <li>Cleanup operations: prune, rm, rmi</li>
+                    <li>Installing Docker on Linux/Windows/Mac</li>
+                    <li>Running sample containers: Hello World, Apache, Nginx</li>
+                    <li>Understanding container lifecycle basics</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- Dockerfile -->
+    <!-- Docker Commands & Container Lifecycle -->
     <div class="panel panel-default clp-section_accord_bx">
         <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-target="#dockerfile">
             <h3 class="panel-title d-flex justify-content-between align-items-center">
-                <span> Dockerfile & Custom Image Building</span>
+                <span> Docker Commands & Container Lifecycle</span>
                 <button class="btn btn-primary toggle-btn">+</button>
             </h3>
         </div>
         <div id="dockerfile" class="panel-collapse collapse">
             <div class="panel-body">
                 <ul>
-                    <li>Dockerfile syntax and instructions: FROM, WORKDIR, COPY, RUN, CMD, ENTRYPOINT</li>
-                    <li>Difference between CMD and ENTRYPOINT</li>
-                    <li>Tagging and versioning Docker images</li>
-                    <li>Building optimized images with small base images (e.g., alpine)</li>
-                    <li>Multi-stage builds for production-ready images</li>
-                    <li>Creating static site containers (e.g., Nginx with custom HTML)</li>
+                    <li>Essential Docker CLI commands</li>
+                    <li>Pausing, restarting, stopping, and removing containers</li>
+                    <li>Inspecting logs and container status</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- DockerHub -->
+    <!-- Dockerfile Essentials -->
     <div class="panel panel-default clp-section_accord_bx">
         <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-target="#registry">
             <h3 class="panel-title d-flex justify-content-between align-items-center">
-                <span> DockerHub & Registry Integration</span>
+                <span> Dockerfile Essentials</span>
                 <button class="btn btn-primary toggle-btn">+</button>
             </h3>
         </div>
         <div id="registry" class="panel-collapse collapse">
             <div class="panel-body">
                 <ul>
-                    <li>Creating a DockerHub account</li>
-                    <li>Generating a Personal Access Token (PAT)</li>
-                    <li>Creating and managing public repositories</li>
-                    <li>Tagging and pushing custom images to DockerHub</li>
-                    <li>Alternative registries: GHCR, ECR, ACR, GCR (overview)</li>
+                    <li>CMD, ENTRYPOINT, ADD, COPY, ENV, ARG</li>
+                    <li>Building custom Docker images</li>
+                    <li>Differences between Dockerfile instructions</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- Volumes & Mounts -->
+    <!-- Docker Volumes & Storage -->
     <div class="panel panel-default clp-section_accord_bx">
         <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-target="#volumes">
             <h3 class="panel-title d-flex justify-content-between align-items-center">
-                <span> Volumes, Bind Mounts & Data Persistence</span>
+                <span> Docker Volumes & Storage</span>
                 <button class="btn btn-primary toggle-btn">+</button>
             </h3>
         </div>
         <div id="volumes" class="panel-collapse collapse">
             <div class="panel-body">
                 <ul>
-                    <li>Why containers are ephemeral</li>
-                    <li>Named volumes vs bind mounts</li>
-                    <li>Volume lifecycle: create, inspect, remove</li>
-                    <li>Mounting host directories for live development</li>
-                    <li>Serving dynamic/static content via mounts</li>
-                    <li>Best practices for data persistence in production</li>
+                    <li>Persistent storage using Volumes and Bind Mounts</li>
+                    <li>How containers store and share data</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- Networking -->
+    <!-- Docker Networking -->
     <div class="panel panel-default clp-section_accord_bx">
         <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-target="#networking">
             <h3 class="panel-title d-flex justify-content-between align-items-center">
@@ -304,83 +291,111 @@
         <div id="networking" class="panel-collapse collapse">
             <div class="panel-body">
                 <ul>
-                    <li>Bridge networks, host network, none</li>
-                    <li>Creating custom Docker networks</li>
-                    <li>Inter-container communication via DNS</li>
-                    <li>Publishing ports with -p</li>
-                    <li>Inspecting container networks</li>
+                    <li>Bridge, host, and overlay networks</li>
+                    <li>Connecting multiple containers</li>
+                    <li>Network isolation and port mapping</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- Best Practices -->
+    <!-- Docker Compose -->
     <div class="panel panel-default clp-section_accord_bx">
         <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-target="#bestPractices">
             <h3 class="panel-title d-flex justify-content-between align-items-center">
-                <span> Image Optimization & Best Practices</span>
+                <span> Docker Compose</span>
                 <button class="btn btn-primary toggle-btn">+</button>
             </h3>
         </div>
         <div id="bestPractices" class="panel-collapse collapse">
             <div class="panel-body">
                 <ul>
-                    <li>Reducing image size with Alpine/slim images</li>
-                    <li>Using .dockerignore to exclude unnecessary files</li>
-                    <li>Layer caching and order of instructions</li>
-                    <li>Keeping images secure and minimal</li>
-                    <li>Avoiding the latest tag in production</li>
+                    <li>Introduction to Docker Compose</li>
+                    <li>Writing docker-compose.yml for multi-container apps</li>
+                    <li>Scaling services with Docker Compose</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- CI/CD -->
+    <!-- Docker Registry & Docker Hub -->
     <div class="panel panel-default clp-section_accord_bx">
         <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-target="#cicd">
             <h3 class="panel-title d-flex justify-content-between align-items-center">
-                <span> CI/CD with Docker & GitHub Actions</span>
+                <span> Docker Registry & Docker Hub </span>
                 <button class="btn btn-primary toggle-btn">+</button>
             </h3>
         </div>
         <div id="cicd" class="panel-collapse collapse">
             <div class="panel-body">
                 <ul>
-                    <li>Introduction to GitHub Actions</li>
-                    <li>Automating Docker image builds and pushes</li>
-                    <li>Creating secrets: DockerHub credentials, SSH keys</li>
-                    <li>SSH-based deployment to remote EC2 server</li>
-                    <li>Sample CI pipelinen</li>
-                    <li>Testing and verification post-deployment</li>
+                    <li>Pushing and pulling images</li>
+                    <li>Public vs private registries</li>
+                    <li>Versioning and image tagging</li>
                 </ul>
             </div>
         </div>
     </div>
 
-    <!-- Final Outcome -->
+    <!-- CI/CD with GitHub Actions -->
     <div class="panel panel-default clp-section_accord_bx">
         <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-target="#outcome">
             <h3 class="panel-title d-flex justify-content-between align-items-center">
-                <span> Final Outcome</span>
+                <span> CI/CD with GitHub Actions </span>
                 <button class="btn btn-primary toggle-btn">+</button>
             </h3>
         </div>
         <div id="outcome" class="panel-collapse collapse">
             <div class="panel-body">
                 <ul>
-                    <li>Ability to containerize real-world apps</li>
-                    <li>Publish and manage images on DockerHub</li>
-                    <li>Deploy Dockerized apps on cloud VMs</li>
-                    <li>Set up Docker CI/CD pipelines using GitHub Actions</li>
-                    <li>Master foundation for Kubernetes & DevOps pipelines</li>
+                    <li>Automating Docker builds and deployments</li>
+                    <li>Integrating GitHub Actions with Docker Hub</li>
+                    <li>Deploying a simple HTML app to Nginx</li>
                 </ul>
             </div>
         </div>
     </div>
-
-</div>
+ </div>
+    <!-- Cleanup & Best Practices -->
+    <div class="panel panel-default clp-section_accord_bx">
+        <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-target="#outcome">
+            <h3 class="panel-title d-flex justify-content-between align-items-center">
+                <span> Cleanup & Best Practices </span>
+                <button class="btn btn-primary toggle-btn">+</button>
+            </h3>
+        </div>
+        <div id="outcome" class="panel-collapse collapse">
+            <div class="panel-body">
+                <ul>
+                    <li>Removing unused containers, images, and volumes</li>
+                    <li>Health checks and monitoring basics</li>
+                    <li>Docker security and optimization tips</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+ </div>         
+    <!-- Wrap-Up & Roadmap -->
+    <div class="panel panel-default clp-section_accord_bx">
+        <div class="panel-heading accordion-toggle collapsed" data-toggle="collapse" data-target="#outcome">
+            <h3 class="panel-title d-flex justify-content-between align-items-center">
+                <span> Wrap-Up & Roadmap </span>
+                <button class="btn btn-primary toggle-btn">+</button>
+            </h3>
+        </div>
+        <div id="outcome" class="panel-collapse collapse">
+            <div class="panel-body">
+                <ul>
+                    <li>Recap of key learnings</li>
+                    <li>Real-world adoption tips</li>
+                    <li>Next steps for advanced Docker/Kubernetes</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+ </div>                            
                         <!-- Curriculum Accordion End -->
-                    </div>
+</div>
                     <!-- Syllabus Section End -->
 
                     <h2 class="mb-3">Related Courses</h2>
